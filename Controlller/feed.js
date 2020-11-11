@@ -162,38 +162,7 @@ exports.UpdatePost =async (req,res,next) => {
     }
     throw error; 
   }
-    // .then(post => {
-    //   if (!post)
-    //   {
-    //     const error = new Error('No Post Found');
-    //     error.statusCode = 422;
-    //     throw error;
-    //   }
-    //   if (post.creator.toString() !== req.userId.toString())
-    //   {
-    //     const error = new Error('UnAuthorization is not Allowed');
-    //     error.statusCode = 422;
-    //    throw error;   
-    //   }
-         
-    //   clearImage(post.imageUrl);  
-    //   post.title = title;
-    //   post.content = content;
-    //   post.imageUrl=`/image/${req.file.filename}`
-    //   post.save()
-    //   .then(result => {
-    //     console.log("Result Updated Post!",result);
-    //      return res.json({ message: 'Updated Post', posts: result });
-    //   })
-    // })
-    
-    // .catch(err => {
-    // if (!err.statusCode)
-    // {
-    //   err.statusCode = 500;  
-    // }
-    // next(err);
-    // })  
+     
       
   
 }
