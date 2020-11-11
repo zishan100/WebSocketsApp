@@ -4,7 +4,7 @@ const bcryptjs = require('bcryptjs');
 const User = require('../Modals/user');
 const { json } = require('body-parser');
 const user = require('../Modals/user');
-/* SignUp :/auth/signUp */
+
 exports.signUp = (req, res, next) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -43,7 +43,7 @@ exports.signUp = (req, res, next) => {
 
 }
 
-/* login request:/auth/login  */
+
 
 exports.login = (req,res,next) => {
     const email = req.body.email; 
